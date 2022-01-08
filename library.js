@@ -7,5 +7,8 @@ function Book(title, author, pages, status) {
     this.status = status;
 }
 
-function addBookToLibrary() {}
+function addBookToLibrary() {
+    const book = new Book(title, author, pages, status);
+    myLibrary.push(book);
+}
 
