@@ -3,35 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Library</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleMain.css">
   <script src="library.js" defer></script>
 </head>
 <body>
-  <div class="header">📘Library</div>
-  <div class="container">
-    <div class="left">
     <div class="menu">
-      <form>
+      <div class="header">📘 Library</div>
+      <form id="forms">
         <div class="form1">
         <label for="book">Book Title</label><br>
         <input type="text"><br>
         </div>
-      </form>
-      <form>
+    
         <div class="form2">
         <label for="author">Author</label><br>
         <input type="text">
         </div>
+
+        <div class="form3">
+        <label for="pages">Number of Pages</label><br>
+        <input type="number"><br>
+        </div>
+        
+        <input type="submit" value="submit">
       </form>
     </div>
-    </div>
     <div class="content">
-      <div class="hi">hello</div>
-      <div class="hi">hello</div>
-      <div class="hi">hello</div>
-      <div class="hi">hello</div>
-      <div class="hi">hello</div>
+      <div class="card"></div>
     </div>
-  </div>
 </body>
 </html>
