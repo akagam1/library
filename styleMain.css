@@ -30,6 +30,8 @@ body {
     font-size: 28px; 
     padding-left: 75px;
     padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 .header {
@@ -42,6 +44,7 @@ form {
     margin-bottom: 100px;
 }
 
+/*
 .card {
     height: 350px;
     width: 250px;
@@ -50,3 +53,5 @@ form {
     border-radius: 10px;
     background-image: linear-gradient(to bottom right, rgb(135, 196, 246), rgb(47, 0, 255));
 }
+
+*/
