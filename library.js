@@ -31,6 +31,8 @@ bookForm.addEventListener('submit', addBook());
 function addBook() {
     /*bookForm.onsubmit = function(){*/
         let card = document.createElement('div');
+        let top = document.createElement('div');
+        let writer = document.createElement('div');
         card.classList.add("card");
         let book = new Book(bookTitle.value, authName.value, numPages.value, card);
         myLibrary.push(book); 
@@ -39,7 +41,20 @@ function addBook() {
         myLibrary[i].element.style.height = "350px";
         myLibrary[i].element.style.width = "250px";   
         myLibrary[i].element.style.margin = "50px";
+        myLibrary[i].element.style.flexDirection = "column";
+        myLibrary[i].element.style.justifyContent = "evenly"
+        top.innerText = book.title
+        top.style.marginBottom = "20re;"
+        writer.innerText = book.author
+        writer.style.marginBottom = "10px;"
+        myLibrary[i].element.style.color = "white";
+        myLibrary[i].element.style.fontWeight = "Bold";
+        myLibrary[i].element.style.fontSize = "30re";
+        myLibrary[i].element.style.textAlign = "center"
+        myLibrary[i].element.appendChild(top)
+        myLibrary[i].element.appendChild(writer)
         cardContainer.appendChild(myLibrary[i].element);  
+        
 }
 
 //Associate each DOM element with index
